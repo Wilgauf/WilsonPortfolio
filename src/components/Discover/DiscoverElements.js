@@ -37,6 +37,7 @@ export const DiscoverRow = styled.div`
 
 export const TextWrapper = styled.div`
     display: flex;
+
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 0;
@@ -65,11 +66,13 @@ export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col2;
+    height:100%;
 `
 
 export const ImgWrap = styled.div`
     max-width: 555px;
-    height: 100%;
+    max-height: 800px;
+    height: 800px;
 `
 
 export const Img = styled.img`
@@ -82,3 +85,37 @@ export const Img = styled.img`
         height: 50%;
     }
 `
+
+export const ImgSM = styled.img`
+    height: 50%;
+    width: auto;
+    margin: 0 0 10px 0;
+    padding-right: 0;
+    align-items: left;
+
+
+    @media screen and (max-width:1100px){
+        height: 50%;
+    }
+`
+
+export const InfoWrapper = styled.div`
+    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    align-items:flex-start;
+`
+
+export const InfoText = styled.h2`
+    padding-top:15px;
+    display:flex;
+    font-size: 20px;
+    justify-content: auto;
+    color:#fff;
+
+`
+
+export const DownloadLink = styled.a`
+    
+`   
