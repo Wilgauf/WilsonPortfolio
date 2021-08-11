@@ -1,22 +1,21 @@
 import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
-
+    height: fit-content;
     background: #fff;
+    width: 100%;
 
     @media screen and (max-width: 768px) {
-        padding: 100px 0;
+        padding: 100px;
     }
 `
 export const ContactWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: auto;
     width: 100%;
     max-width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 40px;
+    margin: 40px auto 40px auto;
     padding: 0 24px;
     justify-content: center;
 
@@ -43,27 +42,36 @@ export const Column2 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col2;
+
+    @media screen and (max-width:768px){
+       display:flex;
+    }
 `
 
 export const ContactHeader = styled.p`
     color: #00BFA6;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 16px;
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    @media screen and (max-width:480px){
+        font-size: 12px;
+        margin-bottom: 10px;
+
+    }
 
 `
 export const ContactSubtitle = styled.h1`
-    margin-bottom:24px;
-    font-size: 40px;
+    margin-bottom: 24px;
+    font-size: 42px;
     line-height: 1.1;
     font-weight: 600;
     color: #010606;
 
     @media screen and (max-width:480px){
-        font-size: 32px;
+        font-size: 28px;
 
     }
 `
@@ -93,9 +101,14 @@ export const MethodWrap = styled.div`
 `
 export const MethodTitle = styled.p`
     font-size: 15px;
-    line-height: 20px;
+    line-height: 24px;
     color: #00BFA6;
     font-weight: 600;
+
+    @media screen and (max-width:700px){
+        font-size: 10px;
+        line-height: 15px;
+    }
 
 `
 export const MethodDetail = styled.h1`
@@ -103,8 +116,8 @@ export const MethodDetail = styled.h1`
     max-width: 440px;
     line-height: 1.1;
 
-    @media screen and (max-width:480px){
-        font-size: 32px;
+    @media screen and (max-width:700px){
+        font-size: 20px;
     }
 `
 
@@ -117,7 +130,7 @@ export const MethodDetailA = styled.a`
     line-height: 1.1;
 
     @media screen and (max-width:480px){
-        font-size: 32px;
+        font-size: 20px;
     }
 `
 

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const ProjectsContainer = styled.div`
-    height:800px;
+    height: 850px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -9,11 +9,8 @@ export const ProjectsContainer = styled.div`
     background: #fff;
 
     @media screen and (max-width: 768px) {
-        height: 1100px;
-
-    }
-    @media screen and (max-width: 480px) {
-        height: 1300px;
+        height: fit-content;
+        padding: 20px 0 20px;
 
     }
 
@@ -23,24 +20,25 @@ export const ProjectsWrapper = styled.div`
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr ;
     align-items: center;
+    justify-content: center;
     grid-gap: 16px;
     padding: 0 50px;
 
-    @media screen and (max-width: 1000px) {
-        grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr; 
+        justify-content: center;
+
+
     }
 
-    @media screen and (max-width: 768px) {
-        grid-tempate-columns: 1fr;
-        padding: 0 20px;
-    }
 `
 
 export const ProjectLink = styled.a`
     text-decoration:none;
     color:#010101;
+
 `
 
 export const ProjectsCard = styled.div`
@@ -51,7 +49,7 @@ export const ProjectsCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    max-height: 385px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
@@ -60,6 +58,13 @@ export const ProjectsCard = styled.div`
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+    }
+    @media screen and (max-width:760px){
+        
+        justify-content: center;
+        height:fit-content;
+        width: 80%;
+        margin: 0 10% 0 10%;
     }
 `
 
@@ -71,13 +76,13 @@ export const ProjectsIcon = styled.img`
 `
 
 export const ProjectsH1= styled.h1`
-
+    margin-top:0;
     font-size: 2.5rem;
     color: #010101;
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px) {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
 `
@@ -89,4 +94,9 @@ export const ProjectsH2= styled.h2`
 export const ProjectsP= styled.p`
     font-size: .9rem;
     text-align: center;
+
+    @media screen and (max-width:610px){
+        font-size: .8rem;
+    }
+
 `

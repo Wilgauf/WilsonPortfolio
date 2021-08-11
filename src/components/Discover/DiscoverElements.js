@@ -6,6 +6,7 @@ export const DiscoverContainer = styled.div`
 
     @media screen and (max-width: 1100px) {
         padding: 100px 0;
+        height: fit-content;
     }
 
 `
@@ -37,15 +38,17 @@ export const DiscoverRow = styled.div`
 
 export const TextWrapper = styled.div`
     display: flex;
-
+    
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding-bottom: 0px;
+
+
 `
 
 export const DiscoverHeader = styled.h1`
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 600;
     padding-top: 60px;
     padding-bottom:0px;
@@ -72,30 +75,32 @@ export const Column2 = styled.div`
 export const ImgWrap = styled.div`
     max-width: 555px;
     max-height: 800px;
-    height: 800px;
+    height: fit-content;
 `
 
 export const Img = styled.img`
-    width: 100%;
+    width: 400px;
     margin: 0 0 10px 0;
     padding-right: 0;
+    height: 800px;
 
 
     @media screen and (max-width:1100px){
-        height: 50%;
+        height: 200px;
+        width: 100%;
     }
 `
 
 export const ImgSM = styled.img`
-    height: 50%;
+    height: 500px;
     width: auto;
     margin: 0 0 10px 0;
     padding-right: 0;
     align-items: left;
 
 
-    @media screen and (max-width:1100px){
-        height: 50%;
+    @media screen and (max-width:800px){
+        height: 250px;
     }
 `
 
@@ -109,10 +114,14 @@ export const InfoWrapper = styled.div`
 
 export const InfoText = styled.h2`
     padding-top:15px;
-    display:flex;
+    
     font-size: 20px;
     justify-content: auto;
     color:#fff;
+
+    @media screen and (max-width:700px){
+        font-size: 12px;
+    }
 
 `
 

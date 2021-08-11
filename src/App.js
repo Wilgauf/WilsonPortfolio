@@ -9,8 +9,8 @@ function App() {
     
 
     <Router>
+      
       <Home />
-      {/* <span>Hello, I'm Wilson... Add a volleyball animation here with a picture of me and a 1 sentence summary</span> */}
     </Router>
   );
 }

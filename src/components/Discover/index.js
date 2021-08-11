@@ -11,27 +11,25 @@ const Discover = () => {
                 <DiscoverWrapper>
                     <TextWrapper>
                         <DiscoverHeader>Discover <Typical 
-                        steps={['Wilson', 3000, 'Petty Officer Gauf' , 3000, 'Willy' , 3000, 'me' , 20000]}
+                        steps={['Wilson', 10000, 'Petty Officer Gauf' , 3000, 'Willy' , 3000, 'me' , 20000]}
                         loop={5}
                         wrapper="b" /></DiscoverHeader>
                     </TextWrapper>
                     <DiscoverRow>
-                        
                         <Column1>
                             <ImgWrap>
                                 <ImgSM src={img} alt={'Photo of Wilson'} />
                                 <InfoText>
-                                Over the course of a relatively short lifetime, I've done some amazing things. Learning languages I hadn't even heard of before, teaching a new generation of linguists, deploying to the Middle East, and growing into a new role as a Full Stack Software Engineer. Learn even more about my professional career from my 
-                                <Link to="../../files/Resume.pdf" target="_blank" download>Resume</Link>
-                                <a href='../../files/Resume.pdf' >Resume</a>
-                            </InfoText>
+                                Over the course of a relatively short lifetime, I've done some amazing things. Learning languages I hadn't even heard of before, teaching a new generation of linguists, deploying to the Middle East, and growing into a new role as a Full Stack Software Engineer. Learn even more about my professional career from my <a href='Resume.pdf' download="Wilson's Resume.pdf">Resume</a>.
+                           
+                                </InfoText>
                             </ImgWrap>
                         
                         </Column1>
                         <Column2>
                             <InfoWrapper>
                                 <InfoText>
-                                    Born in Detroit, I love the Red Wings and have since birth thanks to my Dad the die hard fan. I spent most of my youth in Indianapolis where I discovered my love of swimming and pretty much anything outdoors. Then I moved onto a new adventure in the Navy...
+                                    Born in Detroit, I love the Red Wings and have since birth thanks to my Dad, a die hard fan. I spent most of my youth in Indianapolis where I discovered my love of swimming and pretty much anything outdoors. Then I moved on to a new adventure in the Navy...
                                 </InfoText>
                                 <InfoText>
                                     After graduating from bootcamp I moved to Monterey, CA where I learned Persian-Farsi to work as a Crytpologic Linguist. About a year and a half later, I flew to Augusta, GA to start my career as a linguist and meet some of the best friends I've ever had. Luckily Georgia has plenty of lakes and beautiful hiking to explore in my offtime. 

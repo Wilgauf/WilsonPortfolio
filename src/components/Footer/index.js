@@ -1,16 +1,24 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { FaLinkedin, FaTwitter, FaFacebook, FaYoutube, FaInstagram } from 'react-icons/fa'
 import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, FooterALink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink } from './FooterElements'
 import { animateScroll as scroll } from 'react-scroll'
+import Modal from '../Modal/Modal'
 
 const Footer = () => {
-
+    const [showModal, setShowModal] = useState(false)
     const toggleHome = () =>{
         scroll.scrollToTop();
     }
 
+    const openModal = () =>{
+        setShowModal(prev => !prev)
+        console.log('changing modal state')
+        console.log(showModal)
+    }
+
     return (
         <FooterContainer>
+            <Modal showModal={showModal} setShowModal={setShowModal}/>
             <FooterWrap>
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
@@ -24,8 +32,8 @@ const Footer = () => {
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Social Media</FooterLinkTitle>
-                                <FooterALink href="/">Instagram</FooterALink>
-                                <FooterALink href="https://www.facebook.com/wgauf/">Facebook</FooterALink>
+                                <FooterALink href="https://www.instagram.com/">Instagram</FooterALink>
+                                <FooterALink href="https://www.facebook.com/">Facebook</FooterALink>
                                 <FooterALink href="https://twitter.com/Wilsonlikethev1">Twitter</FooterALink>
                                 <FooterALink href="https://www.youtube.com/channel/UCYl21uALabwwTHiI6GubUSA">Youtube</FooterALink>
                             
@@ -34,10 +42,10 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Contact Me</FooterLinkTitle>
-                                <FooterLink to="/">Contact</FooterLink>
-                                <FooterLink to="/">Report a bug</FooterLink>
-                                <FooterLink to="/">Careers</FooterLink>
-                                <FooterLink to="/">The team</FooterLink>
+                                <FooterLink onClick={openModal}>Contact</FooterLink>
+                                <FooterLink onClick={openModal}>Report a bug</FooterLink>
+                                <FooterLink onClick={openModal}>Careers</FooterLink> 
+                                <FooterLink onClick={openModal}>The team</FooterLink>
                             
                         </FooterLinkItems>
 
@@ -50,7 +58,7 @@ const Footer = () => {
                         </SocialLogo>
                         <WebsiteRights> Nosliw Copyright {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                         <SocialIcons>
-                            <SocialIconLink href="//www.facebook.com/wgauf/" target="_blank" aria-label="Facebook"><FaFacebook/></SocialIconLink>
+                            <SocialIconLink href="//www.facebook.com/" target="_blank" aria-label="Facebook"><FaFacebook/></SocialIconLink>
                             <SocialIconLink href="//www.instagram.com/" target="_blank" aria-label="Instagram"><FaInstagram/></SocialIconLink>
                             <SocialIconLink href="//www.youtube.com/channel/UCYl21uALabwwTHiI6GubUSA" target="_blank" aria-label="Youtube"><FaYoutube/></SocialIconLink>
                             <SocialIconLink href="//twitter.com/Wilsonlikethev1" target="_blank" aria-label="Twitter"><FaTwitter/></SocialIconLink>

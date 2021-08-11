@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { ContactContainer, ContactWrapper, Column1, ContactHeader, ContactSubtitle, ContactMethod, MethodTitle, MethodDetail, MethodDetailA, ContactRow, Column2, FormContent, FormHeader, FormInput, ContactForm, MethodWrap, IconWrap } from './ContactElements'
 import { Button } from '../ButtonElement'
 import { FaPhoneAlt, FaMailBulk, FaLinkedinIn } from 'react-icons/fa'
@@ -8,6 +9,7 @@ const Contact = () => {
          <ContactContainer id="contact">
              <ContactWrapper>
              <ContactRow>
+             
                 <Column1>
                 <ContactHeader>Get in touch</ContactHeader>
                 <ContactSubtitle>Lets get a coffee?</ContactSubtitle>
@@ -17,7 +19,7 @@ const Contact = () => {
                     </IconWrap>
                     <MethodWrap>
                         <MethodTitle>Call me</MethodTitle>
-                        <MethodDetail>317-777-4534</MethodDetail>
+                        <MethodDetail>867-5309</MethodDetail>
                     </MethodWrap>
                 </ContactMethod>
                 <ContactMethod>
@@ -35,8 +37,8 @@ const Contact = () => {
                     </IconWrap>
                     <MethodWrap>
                     <MethodTitle>Connect with me</MethodTitle>
-                    <MethodDetailA href="//www.linkedin.com/in/wilson-gauf/" target="_blank" >https://www.linkedin.com/in/wilson-gauf/
-</MethodDetailA>
+                    <MethodDetailA href="//www.linkedin.com/in/wilson-gauf/" target="_blank" >My LinkedIn
+                    </MethodDetailA>
                     </MethodWrap>
                     
                 </ContactMethod>

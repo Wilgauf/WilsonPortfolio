@@ -7,7 +7,8 @@ export const HomeContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 1000px;
+    height: 100vh;
+    width: 100vw;
     position: relative;
     z-index: 1;
 
@@ -21,6 +22,8 @@ export const HomeContainer = styled.div`
         background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.6) 100%), linear-gradient(180deg, rgba(0,0,0.2) 0%, transparent 100%)
         z-index:2;
     }
+
+
 `
 
 export const HomeBG = styled.div`
