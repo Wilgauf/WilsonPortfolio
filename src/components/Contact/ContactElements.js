@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const ContactContainer = styled.div`
     height: fit-content;
+    padding-top:100px;
     background: #fff;
     width: 100%;
 
